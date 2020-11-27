@@ -10,6 +10,7 @@ py_binary(
         "prices.csv",
         "prices_2017_09_22_2017-09-28.csv",
     ],
+    imports = ["*"],
     deps = [
         requirement("pandas"),
         requirement("numpy"),

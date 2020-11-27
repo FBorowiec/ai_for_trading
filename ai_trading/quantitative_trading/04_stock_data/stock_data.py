@@ -9,7 +9,7 @@
 # In[ ]:
 
 
-with open("prices.csv", "r") as file:
+with open("ai_trading/quantitative_trading/04_stock_data/prices.csv", "r") as file:
     prices = file.read()
 
 print(prices)
@@ -34,7 +34,7 @@ print(prices)
 
 import pandas as pd
 
-price_df = pd.read_csv("prices.csv")
+price_df = pd.read_csv("ai_trading/quantitative_trading/04_stock_data/prices.csv")
 
 price_df
 
@@ -45,7 +45,7 @@ price_df
 
 
 price_df = pd.read_csv(
-    "prices.csv",
+    "ai_trading/quantitative_trading/04_stock_data/prices.csv",
     names=[
         "ticker",
         "date",
@@ -204,7 +204,3 @@ def csv_to_close(csv_filepath, field_names):
 
 
 quiz_tests.test_csv_to_close(csv_to_close)
-
-
-# ## Quiz Solution
-# If you're having trouble, you can check out the quiz solution [here](stock_data_solution.ipynb).

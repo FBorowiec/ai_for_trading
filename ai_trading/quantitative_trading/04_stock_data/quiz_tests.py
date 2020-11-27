@@ -9,7 +9,7 @@ def test_csv_to_close(fn):
     dates = ["2017-09-22", "2017-09-25", "2017-09-26", "2017-09-27", "2017-09-28"]
 
     fn_inputs = {
-        "csv_filepath": "prices_2017_09_22_2017-09-28.csv",
+        "csv_filepath": "ai_trading/quantitative_trading/04_stock_data/prices_2017_09_22_2017-09-28.csv",
         "field_names": [
             "ticker",
             "date",
