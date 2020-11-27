@@ -2,15 +2,11 @@ load("@rules_python//python:defs.bzl", "py_binary")
 load("@ai_for_trading_deps//:requirements.bzl", "requirement")
 
 py_binary(
-    name = "stock_data",
+    name = "resample_data",
     srcs = [
-        "stock_data.py",
-    ],
-    data = [
-        "prices.csv",
-        "prices_2017_09_22_2017-09-28.csv",
-        "quiz_tests.py",
+        "resample_data.py",
         "tests.py",
+        "quiz_tests.py",
     ],
     deps = [
         requirement("pandas"),
