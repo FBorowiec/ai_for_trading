@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 import matplotlib.pyplot as plt
-import quiz_tests
+import test_normality_quiz_tests
 
 # Set plotting options
 # get_ipython().run_line_magic("matplotlib", "inline")
@@ -135,7 +135,7 @@ def is_normal_ks(sample, test=stats.kstest, p_level=0.05, **kwargs):
     return p_value > p_level
 
 
-quiz_tests.test_is_normal_ks(is_normal_ks)
+test_normality_quiz_tests.test_is_normal_ks(is_normal_ks)
 
 
 # In[ ]:

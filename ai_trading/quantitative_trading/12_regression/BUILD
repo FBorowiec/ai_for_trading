@@ -16,9 +16,9 @@ py_binary(
 py_binary(
     name = "test_normality",
     srcs = [
-        "quiz_tests.py",
         "test_normality.py",
-        "tests.py",
+        "test_normality_quiz_tests.py",
+        "test_normality_tests.py",
     ],
     main = "test_normality.py",
     deps = [
@@ -26,5 +26,24 @@ py_binary(
         requirement("numpy"),
         requirement("pandas"),
         requirement("scipy"),
+    ],
+)
+
+py_binary(
+    name = "regression",
+    srcs = [
+        "regression.py",
+        "regression_helper.py",
+        "regression_quiz_tests.py",
+        "regression_tests.py",
+    ],
+    main = "regression.py",
+    deps = [
+        requirement("matplotlib"),
+        requirement("numpy"),
+        requirement("pandas"),
+        requirement("scipy"),
+        requirement("scikit-learn"),
+        requirement("tqdm"),
     ],
 )
