@@ -28,3 +28,16 @@ py_binary(
         requirement("pandas"),
     ],
 )
+
+py_binary(
+    name = "statistical_test",
+    srcs = [
+        "statistical_test.py",
+    ],
+    data = ["net_returns.csv"],
+    deps = [
+        requirement("numpy"),
+        requirement("pandas"),
+        requirement("scipy"),
+    ],
+)
