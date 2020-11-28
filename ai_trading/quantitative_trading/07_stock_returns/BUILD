@@ -13,3 +13,14 @@ py_binary(
         requirement("numpy"),
     ],
 )
+
+py_binary(
+    name = "returns_distributions",
+    srcs = [
+        "returns_distributions.py",
+    ],
+    deps = [
+        requirement("matplotlib"),
+        requirement("scipy"),
+    ],
+)
