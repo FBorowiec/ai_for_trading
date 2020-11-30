@@ -10,3 +10,16 @@ py_binary(
         requirement("pandas"),
     ],
 )
+
+py_binary(
+    name = "rolling_windows",
+    srcs = [
+        "quiz_tests.py",
+        "rolling_windows.py",
+        "tests.py",
+    ],
+    deps = [
+        requirement("numpy"),
+        requirement("pandas"),
+    ],
+)
