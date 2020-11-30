@@ -23,3 +23,13 @@ py_binary(
         requirement("pandas"),
     ],
 )
+
+py_binary(
+    name = "estimate_volatility",
+    srcs = ["estimate_volatility.py"],
+    data = ["data.csv"],
+    deps = [
+        requirement("numpy"),
+        requirement("pandas"),
+    ],
+)
