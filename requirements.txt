@@ -11,6 +11,8 @@ plotly==2.2.3
 #requests>=2.25.0
 scipy>=1.5.4
 scikit-learn>=0.19.1
+seaborn>=0.11.0
 #six>=1.11.0
+statsmodels>=0.12.1
 tqdm>=4.54.0
 #zipline>=1.4.1
