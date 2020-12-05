@@ -10,8 +10,8 @@ py_binary(
         "project_tests.py",
         "tests.py",
     ],
-    main = "project_2_starter.py",
     data = ["eod-quotemedia.csv"],
+    main = "project_2_starter.py",
     deps = [
         requirement("colour"),
         requirement("pandas"),
