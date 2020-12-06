@@ -40,6 +40,21 @@ py_binary(
 )
 
 py_binary(
+    name = "cvxpy_advanced",
+    srcs = [
+        "cvxpy_advanced.py",
+        "quiz_tests.py",
+        "tests.py",
+    ],
+    main = "cvxpy_advanced.py",
+    deps = [
+        requirement("cvxpy"),
+        requirement("numpy"),
+        requirement("pandas"),
+    ],
+)
+
+py_binary(
     name = "cvxpy_exercise_1",
     srcs = [
         "cvxpy_exercise_1.py",
