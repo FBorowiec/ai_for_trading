@@ -41,7 +41,7 @@
 
 import sys
 
-#get_ipython().system("{sys.executable} -m pip install -r requirements.txt")
+# get_ipython().system("{sys.executable} -m pip install -r requirements.txt")
 
 
 # ### Load Packages
