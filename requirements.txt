@@ -16,4 +16,4 @@ seaborn>=0.11.0
 #six>=1.11.0
 statsmodels>=0.12.1
 tqdm>=4.54.0
-zipline>=1.4.1
+#zipline>=1.4.1
